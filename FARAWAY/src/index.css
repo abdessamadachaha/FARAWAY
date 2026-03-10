@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand";
+  font-weight: 500;
+  color: #5a3e2b;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+header {
+  background-color: #f4a226;
+}
+
+header h1 {
+  font-family: "Monoton";
+  font-size: 5rem;
+  font-weight: 400;
+  word-spacing: 30px;
+  text-align: center;
+  letter-spacing: -4px;
+  padding: 20px 0;
+}
+
+.tripForm {
+  background-color: #e5771f;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.tripForm .form {
+  display: flex;
+  gap: 10px;
+}
+
+.tripForm .form select, .form input, .form button {
+  font-family: "Quicksand";
+  background-color: #ffebb3;
+  color: #5a3e2b;
+  border: none;
+  outline: none;
+  padding: 9px 20px;
+  border-radius: 18px;
+  font-weight: 700;
+}
+.tripForm .form button {
+  background-color: #76c7ad;
+  cursor: pointer;
+}
+
+.main {
+  background-color: #5a3e2b;
+  padding: 15px 20px;
+}
+
+.list {
+  background-color: #5a3e2b;
+  color: #ffebb3;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.list ul {
+  list-style: none;
+  width: 80%;
+  /* overflow: scroll; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+  justify-content: center;
+  align-content: start;
+}
+
+.list ul li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+input[type="checkbox"] {
+  height: 1.5rem;
+  width: 1.5rem;
+  accent-color: #e5771f;
+}
+
+.list li button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  transform: translateY(2px);
+}
+
+
+
+
+
+.footer {
+  background-color: #76c7ad;
+  padding: 20px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
